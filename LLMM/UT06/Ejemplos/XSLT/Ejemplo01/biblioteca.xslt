@@ -6,10 +6,9 @@
     
     <xsl:output method="html" omit-xml-declaration="yes" media-type="text/html" />
     <xsl:template match="/">
-        <xsl:text disable-output-escaping='yes'>&lt;!DOCTYPE html&gt;</xsl:text>
         <html lang="es">
             <head>
-                <meta charset="UTF-8" />
+                <meta charset="UTF-8"/>
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <title>Biblioteca</title>
             </head>
@@ -20,7 +19,7 @@
                 </header>
                 <main>
                     <xsl:for-each select="biblioteca/libro">
-                        <xsl:sort select="anio" order="descending" />
+                        <xsl:sort select="anio" order="ascending" />
                         <article>
                             <h2>
                                 <xsl:value-of select="titulo" />
@@ -41,7 +40,7 @@
                                 <xsl:when test="anio &lt; 1950">
                                     <p>Primera mitad del sigo XX.</p>
                                 </xsl:when>
-                                <xsl:when test="anio &gt; 1950 and anio &lt; 2000 ">
+                                <xsl:when test="anio &gt; 1949 and anio &lt; 2000 ">
                                     <p>Segunda mitad del sigo XX.</p>
                                 </xsl:when>
                                 <xsl:otherwise>
@@ -53,14 +52,18 @@
                                 Género:
                                 <xsl:value-of select="genero" />
                             </p>
-                            <p>Subgéneros:</p>
-                            <ul>
-                                <xsl:for-each select="subgeneros/subgenero">
-                                    <li>
-                                        <xsl:value-of select="." />
-                                    </li>
-                                </xsl:for-each>
-                            </ul>
+
+                            <xsl:if test="count(subgeneros/subgenero) &gt; 0">
+
+                                <p>Subgéneros:</p>
+                                <ul>
+                                    <xsl:for-each select="subgeneros/subgenero">
+                                        <li>
+                                            <xsl:value-of select="." />
+                                        </li>
+                                    </xsl:for-each>
+                                </ul>
+                            </xsl:if>
                             <p>
                                 Título original:
                                 <xsl:value-of select="tituloOriginal" />
@@ -68,6 +71,7 @@
                             
                         </article>
                     </xsl:for-each>
+
                 </main>
                 
                 <footer>
