@@ -72,7 +72,15 @@
                                 <xsl:attribute name="src">
                                     <xsl:value-of select="imagen"/>
                                 </xsl:attribute>
-                                <xsl:attribute name="alt">Texto alternativo</xsl:attribute>
+                                <xsl:attribute name="alt">
+                                    Portada de <xsl:value-of select="titulo"/>
+                                </xsl:attribute>
+                                <xsl:attribute name="title">
+                                    Portada de <xsl:value-of select="titulo"/>
+                                </xsl:attribute>
+                                <xsl:attribute name="class">
+                                    portada
+                                </xsl:attribute>
                             </img>
                         </article>
                     </xsl:for-each>
@@ -81,6 +89,7 @@
                 
                 <footer>
                     Biblioteca del IES Clara del Rey
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAHElEQVQI12P4//8/w38GIAXDIBKE0DHxgljNBAAO9TXL0Y4OHwAAAABJRU5ErkJggg==" alt="Red dot" />
                 </footer>
             </body>
             

@@ -43,4 +43,20 @@
         </tituloOriginal>
         <imagen>https://tercerafundacion.net/imagenes/portada/P-00000307.jpg</imagen>        
     </libro>
+    <libro>
+        <titulo>1984</titulo>
+        <autor>George Orwell</autor>
+        <anio>1949</anio>
+        <genero>Novela</genero>
+        <subgeneros>
+            <subgenero>Ciencia Ficción</subgenero>
+            <subgenero>Distopía</subgenero>
+        </subgeneros>
+        <tituloOriginal>
+            1984
+        </tituloOriginal>
+        <imagen>https://images.cdn2.buscalibre.com/fit-in/360x360/2e/01/2e015310e33c2cdabbc98f5c29b5a700.jpg</imagen>
+    </libro>
+
+
 </biblioteca>

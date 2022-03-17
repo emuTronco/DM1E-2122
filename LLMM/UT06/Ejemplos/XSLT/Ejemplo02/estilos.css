@@ -2,6 +2,6 @@ body{
     background-color:beige;
 }
 
-img{
+img.portada {
     width: 250px;
 }
