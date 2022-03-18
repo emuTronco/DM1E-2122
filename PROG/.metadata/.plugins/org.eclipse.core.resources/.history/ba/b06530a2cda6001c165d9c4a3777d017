@@ -1,0 +1,10 @@
+package es.iseclaradelrey.dm1e2122.ut12.ejemplos.ejemplo01directorios;
+
+public class Ejemplo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

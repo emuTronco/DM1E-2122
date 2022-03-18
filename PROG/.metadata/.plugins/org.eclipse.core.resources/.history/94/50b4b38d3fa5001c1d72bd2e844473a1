@@ -1,0 +1,7 @@
+package es.claradelrey.dm1e.ut09excepciones.ejemplos.ejemplo06herencia;
+
+public class ExcepcionPersonalizadaA extends Exception{
+
+}
+
+

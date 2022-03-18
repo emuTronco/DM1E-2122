@@ -1,0 +1,15 @@
+package es.iseclaradelrey.dm1e2122.ut12.ejemplos.ejemplo01directorios;
+
+import java.io.File;
+
+public class Ejemplo01 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		File f = new File("/esta/ruta/no/existe/fichero.txt");
+		System.out.println(f.exists());
+
+	}
+
+}
