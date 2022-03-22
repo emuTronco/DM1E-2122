@@ -1,7 +1,0 @@
-/**
- * Paquete de clases del proyecto
- * Paquete para demostrar la documentación de clases con JavaDoc
- * Los comentarios JavaDoc para paquetes tienen que colocarse en un fichero "package-info.java".
- * Elicpse, al crear un nuevo paquete, nos da la opción de crear este fichero.
- */
-package es.iesclaradelrey.dm1e2122.ut07.clases;
