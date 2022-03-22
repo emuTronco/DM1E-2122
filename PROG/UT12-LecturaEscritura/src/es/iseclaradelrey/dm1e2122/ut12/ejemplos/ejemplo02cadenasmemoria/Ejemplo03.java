@@ -5,12 +5,17 @@ import java.io.StringReader;
 
 /**
  * 
- * Ejemplo básico de uso de StringReader. 
+ * Ejemplo básico de uso de StringReader.
  *
  */
 public class Ejemplo03 {
 
 	public static void main(String[] args) throws IOException {
+		//sinFinally();
+		conFinally();
+	}
+
+	private static void sinFinally() throws IOException {
 		String cadenaConContenido = "Esta cadena la podemos procesar como un stream.";
 		StringReader reader = new StringReader(cadenaConContenido);
 		int code;
@@ -22,4 +27,22 @@ public class Ejemplo03 {
 		// cierra.
 		reader.close();
 	}
+
+	private static void conFinally() throws IOException {
+		String cadenaConContenido = "Esta cadena la podemos procesar como un stream.";
+		StringReader reader = null;
+		try {
+			reader = new StringReader(cadenaConContenido);
+			int code;
+			while ((code = reader.read()) != -1) {
+				System.out.println((char) code);
+			}
+
+		} finally {
+			if (reader != null) {
+				reader.close();
+			}
+		}
+	}
+
 }
