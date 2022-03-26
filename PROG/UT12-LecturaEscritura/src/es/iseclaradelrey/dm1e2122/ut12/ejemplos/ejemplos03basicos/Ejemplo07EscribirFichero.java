@@ -9,7 +9,7 @@ public class Ejemplo07EscribirFichero {
 
 		// Este fichero se creará dentro del directorio donde se ejecuta el
 		// programa. Si estamos en Eclipse, dentro de la carpeta del proyecto.
-		try (FileWriter fw = new FileWriter("FicherosPrueba/salida.txt")) {
+		try (FileWriter fw = new FileWriter("FicherosPrueba/salidaNueva.txt", true)) {
 			String frasesAEscribir = "Frase uno.\nFrase dos.";
 			fw.write(frasesAEscribir);
 		}
