@@ -1,8 +1,6 @@
 package es.iesclaradelrey.dm1e2122.programame.serie02;
 
-import java.time.Duration;
-import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
+
 import java.util.Scanner;
 
 public class P462MundoLimpio {

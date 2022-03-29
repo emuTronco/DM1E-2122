@@ -1,5 +1,6 @@
 package es.iseclaradelrey.dm1e2122.ut12.ejercicios;
 
+import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -15,8 +16,8 @@ public class Ejercicio06 {
 	// puede que haya formas más eficientes de hacerlo, puedes usar un conjunto
 	// (SET) para comprobar si una letra del fichero original es una vocal.
 
-	private static final String NOM_FICHERO = "FicherosPrueba/parrafo.txt";
-	private static final String NOM_FICHERO_SALIDA = "FicherosPrueba/parrafoSinVocales.txt";
+	private static final String NOM_FICHERO = "FicherosPrueba" + File.separator + "parrafo.txt";
+	private static final String NOM_FICHERO_SALIDA = "FicherosPrueba" + File.separator + "parrafoSinVocales.txt";
 
 	// Definimos un array para cargar el conjunto de vocales. Así no hay que hacer
 	// múltiples add en el conjunto.
@@ -31,7 +32,8 @@ public class Ejercicio06 {
 	public static void main(String[] args) throws IOException {
 		// Usamos try-with-resources para que los dos streams (reader y writer) se
 		// cierren automáticamente al salir del bloque.
-		try (FileReader fr = new FileReader(NOM_FICHERO); FileWriter fw = new FileWriter(NOM_FICHERO_SALIDA)) {
+		try (FileReader fr = new FileReader(NOM_FICHERO); 
+				FileWriter fw = new FileWriter(NOM_FICHERO_SALIDA)) {
 			int c;
 			// Leemos hasta que se ha alcanzado el fin del fichero
 			while ((c = fr.read()) != -1) {
@@ -40,6 +42,16 @@ public class Ejercicio06 {
 					fw.write(c);
 				}
 			}
+			
+			// Este código es equivalente al de arriba, pero menos compacto.
+//			c = fr.read();
+//			while (c != -1) {
+//				if (!VOCALES.contains((char) c)) {
+//					// Escribimos en el fichero de salida sólo si no es una vocal.
+//					fw.write(c);
+//				}
+//				c = fr.read();
+//			}
 		}
 	}
 }

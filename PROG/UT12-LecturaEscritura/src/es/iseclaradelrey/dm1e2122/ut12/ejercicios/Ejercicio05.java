@@ -1,5 +1,6 @@
 package es.iseclaradelrey.dm1e2122.ut12.ejercicios;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintStream;
@@ -13,10 +14,10 @@ public class Ejercicio05 {
 	// escribirá en el fichero, hasta que el usuario escriba una línea que sólo
 	// tenga la palabra “FIN”, en mayúsculas.
 
-	private static final String NOM_FICHERO = "FicherosPrueba/parrafo.txt";
+	private static final String NOM_FICHERO = "FicherosPrueba" + File.separator + "parrafo.txt";
 
 	public static void main(String[] args) throws IOException {
-		//conFileWriter();
+		// conFileWriter();
 		conPrintWriter();
 
 	}
