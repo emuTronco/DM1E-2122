@@ -1,0 +1,26 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table{
+    border-collapse:separate;
+}
+
+th{
+    background-color: black;
+    color: white;
+    padding: .5em;
+}
+tr:nth-child(even){
+    background-color: darkgrey;
+}
+tr:nth-child(odd){
+    background-color: lightgray;
+}
+tr td:nth-child(1){
+    background-color: black;
+    color: white;
+}
+td{
+    padding: .5em;
+}
