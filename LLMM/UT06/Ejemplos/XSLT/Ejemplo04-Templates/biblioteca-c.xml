@@ -2,7 +2,7 @@
 <?xml-stylesheet href="biblioteca-c.xslt" type="text/xsl"?>
 
 <biblioteca>
-    <libro>
+    <libro id="L1">
         <titulo>La mujer del viajero en el tiempo</titulo>
         <autor>Audry Niffeneger</autor>
         <anio>2003</anio>
@@ -16,7 +16,7 @@
             The Time Traveler's Wife
         </tituloOriginal>
     </libro>
-    <libro>
+    <libro id="L2">
         <titulo>El aprendiz de guerrero</titulo>
         <autor>Lois McMaster Bujold</autor>
         <anio>1986</anio>
@@ -29,7 +29,7 @@
             The warrior's Apprentice
         </tituloOriginal>
     </libro>
-    <libro>
+    <libro id="L3">
         <titulo>El Juego de Ender</titulo>
         <autor>Orson Scott Card</autor>
         <anio>1985</anio>

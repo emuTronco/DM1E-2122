@@ -23,7 +23,9 @@
                     <xsl:apply-templates />
                 </main>
                 
-                <xsl:call-template name="pie"/>
+                <xsl:call-template name="pie">
+                    <xsl:with-param name="nombreIES" select="biblioteca/@nombreIES"></xsl:with-param>
+                </xsl:call-template>
             </body>
         </html>
     </xsl:template>
@@ -94,8 +96,10 @@
     </xsl:template>
     
     <xsl:template name="pie">
+        <xsl:param name="nombreIES"></xsl:param>
         <footer>
-            Biblioteca del IES Clara del Rey                    
+            Biblioteca del IES <xsl:value-of select="$nombreIES"/>                    
+            <p>Número de libros: <xsl:value-of select="count(//libro)"></xsl:value-of></p>
         </footer>
     </xsl:template>
     

@@ -21,7 +21,7 @@
                 <h2>Ordenado por barrio</h2>
                 <ul>
                     <xsl:for-each select="/barrios-extension/barrio">
-                        <xsl:sort select="nombre_barrio"/>
+                        <xsl:sort select="nombre_barrio" />
                         <li>
                             <xsl:value-of select="nombre_barrio" />
                             -
@@ -34,7 +34,7 @@
                 <h2>Ordenado por barrio (descendente)</h2>
                 <ul>
                     <xsl:for-each select="/barrios-extension/barrio">
-                        <xsl:sort select="nombre_barrio" order="descending"/>
+                        <xsl:sort select="nombre_barrio" order="descending" />
                         <li>
                             <xsl:value-of select="nombre_barrio" />
                             -
@@ -46,18 +46,18 @@
                 <h2>Ordenado por superficie</h2>
                 <ul>
                     <xsl:for-each select="/barrios-extension/barrio">
-                        <xsl:sort select="km2"/>
+                        <xsl:sort select="number(km2)" data-type="number" />
                         <li>
                             <xsl:value-of select="nombre_barrio" />
                             -
-                            <xsl:value-of select="number(km2)" />
+                            <xsl:value-of select="km2" />
                         </li>
                     </xsl:for-each>
                 </ul>
                 <h2>Ordenado por superficie (descendente)</h2>
-                <ul>e
+                <ul>
                     <xsl:for-each select="/barrios-extension/barrio">
-                        <xsl:sort select="number(km2)" order="descending"/>
+                        <xsl:sort select="number(km2)" order="descending" data-type="number" />
                         <li>
                             <xsl:value-of select="nombre_barrio" />
                             -
