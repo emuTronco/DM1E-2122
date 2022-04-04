@@ -17,21 +17,21 @@ public class Ejercicio12 {
 	private static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) throws FileNotFoundException, IOException {
-		System.out.println("¿Matrícula? ");
-		String matricula = sc.nextLine();
-		System.out.println("¿Marca? ");
-		String marca = sc.nextLine();
-		System.out.println("¿Modelo? ");
-		String modelo = sc.nextLine();
-		System.out.println("¿Capacidad del depósito? ");
-		Double capacidad = Double.parseDouble(sc.nextLine());
-		
-		try (DataOutputStream fo = new DataOutputStream(new FileOutputStream(NOM_FICHERO, true))) {
-			fo.writeUTF(matricula);
-			fo.writeUTF(marca);
-			fo.writeUTF(modelo);
-			fo.writeDouble(capacidad);
-		}
+//		System.out.println("¿Matrícula? ");
+//		String matricula = sc.nextLine();
+//		System.out.println("¿Marca? ");
+//		String marca = sc.nextLine();
+//		System.out.println("¿Modelo? ");
+//		String modelo = sc.nextLine();
+//		System.out.println("¿Capacidad del depósito? ");
+//		Double capacidad = Double.parseDouble(sc.nextLine());
+//		
+//		try (DataOutputStream fo = new DataOutputStream(new FileOutputStream(NOM_FICHERO, true))) {
+//			fo.writeUTF(matricula);
+//			fo.writeUTF(marca);
+//			fo.writeUTF(modelo);
+//			fo.writeDouble(capacidad);
+//		}
 		mostrarContenidoFichero(NOM_FICHERO);
 	}
 	

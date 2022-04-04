@@ -28,9 +28,9 @@ public class Ejercicio11 {
 		}
 		mostrarContenidoFichero(NOM_FICHERO);
 	}
-	
-	private static void mostrarContenidoFichero (String nombreFichero) throws IOException {
-		
+
+	private static void mostrarContenidoFichero(String nombreFichero) throws IOException {
+
 		System.out.println("Contenido del fichero:");
 		try (DataInputStream is = new DataInputStream(new FileInputStream(NOM_FICHERO))) {
 			boolean isEOF = false;
@@ -44,7 +44,24 @@ public class Ejercicio11 {
 				}
 			}
 		}
-		
-		
 	}
+
+	private static void mostrarContenidoFichero2(String nombreFichero) {
+
+		System.out.println("Contenido del fichero:");
+		try (DataInputStream is = new DataInputStream(new FileInputStream(NOM_FICHERO))) {
+			while (true) {
+				int entero = is.readInt();
+				System.out.println(entero);
+			}
+		} catch (EOFException e) {
+		} catch (FileNotFoundException e1) {
+			System.err.println("No se ha encontrado el fichero " + NOM_FICHERO);
+			e1.printStackTrace();
+		} catch (IOException e1) {
+			System.err.println("Ha habido un error al usar fichero " + NOM_FICHERO);
+			e1.printStackTrace();
+		}
+	}
+
 }

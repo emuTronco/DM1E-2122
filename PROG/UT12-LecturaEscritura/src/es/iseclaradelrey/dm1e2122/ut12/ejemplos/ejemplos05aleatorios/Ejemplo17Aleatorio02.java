@@ -45,7 +45,12 @@ public class Ejemplo17Aleatorio02 {
 						// Para sobrescribirlo con el doble hay que volver atrás el tamaño de un número
 						// entero en bytes.
 						System.out.printf("Saltando %d bytes atrás.\n", Integer.BYTES);
-						raf.skipBytes(-(Integer.BYTES));
+						if (raf.skipBytes(-(Integer.BYTES)) == Integer.BYTES) {
+							System.out.printf("Salto OK.\n", Integer.BYTES);
+						} else {
+							System.out.printf("Salto KO.\n", Integer.BYTES);
+						}
+
 						// Escribimos el número duplicado. Al hacerlo avanzamos al mismo punto en que
 						// estábamos antes de volver atrás.
 						System.out.printf("Escribiendo el valor duplicado (%d * 2) en la posición %d del fichero.\n",
@@ -64,7 +69,7 @@ public class Ejemplo17Aleatorio02 {
 		}
 	}
 
-	private static void mostrarContenidoFichero() {
+	private static void mostrarContenidoFichero2() {
 		try (RandomAccessFile raf = new RandomAccessFile(PATH_FICHERO, "r")) {
 			// Como los métodos para leer enteros no devuelven -1 al llegar al final hay que
 			// controlarlo con la excepción EOFException y un boolean
@@ -87,4 +92,22 @@ public class Ejemplo17Aleatorio02 {
 		}
 	}
 
+	private static void mostrarContenidoFichero() {
+		try (RandomAccessFile raf = new RandomAccessFile(PATH_FICHERO, "r")) {
+			// Como los métodos para leer enteros no devuelven -1 al llegar al final hay que
+			// controlarlo con la excepción EOFException y un boolean
+			while (true) {
+				// Leemos el entero en la posición actual
+				int numero = raf.readInt();
+				System.out.printf("%d ", numero);
+			}
+		} catch (EOFException e) {
+		} catch (FileNotFoundException e) {
+			System.err.println("No se ha podido abrir o crear el fichero " + PATH_FICHERO);
+		} catch (IOException e) {
+			System.err.println("No se ha podido abrir o crear el fichero " + PATH_FICHERO);
+			e.printStackTrace();
+		}
+		System.out.println();
+	}
 }

@@ -47,7 +47,8 @@ public class Ejemplo16Aleatorio01 {
 			// Saltamos 9 enteros. Integer.Bytes sólo está disponible desde la versión 8 de
 			// Java. Si se usa Java 7 o anterior, usar directamente una constante con el
 			// valor 4 (un entero ne java son 32 bits, u 8 bytes).
-			raf.skipBytes(9 * 4); // Salto 9 => Elemento 10 más allá
+			raf.skipBytes(9 * Integer.BYTES); // Salto 9 => Elemento 10 más allá
+			//raf.skipBytes(9 * 4); // Salto 9 => Elemento 10 más allá
 			System.out.print("10 elementos más allá, en la posición " + raf.getFilePointer() + " está el ");
 			System.out.println(raf.readInt());
 		} catch (FileNotFoundException e) {
