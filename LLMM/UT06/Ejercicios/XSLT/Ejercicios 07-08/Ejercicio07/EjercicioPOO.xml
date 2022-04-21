@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="ejercicio07.xsl" type="text/xsl"?>
+<quiz>
+  <!-- question: 0  -->
+  <question type="category">
+    <category>
+      <text>$course$/top/Por defecto en DM1E_P_2122/Exámen parcial POO</text>
+    </category>
+    <info format="html">
+      <text></text>
+    </info>
+    <idnumber></idnumber>
+  </question>
+  
+  <!-- question: 235313  -->
+  <question type="multichoice">
+    <name>
+      <text>Abstractas 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Indica la afirmación correcta respecto a las clases abstractas en Java.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Los métodos de una clase abstracta pueden ser abstractos o concretos.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Las clases abstractas permiten la herencia múltiple.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Los métodos de una clase abstracta son siempre public abstract.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Se pueden instanciar (crear) objetos de una clase abstracta.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235308  -->
+  <question type="multichoice">
+    <name>
+      <text>Constructores 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Los constructores:<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>false</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Deben tener el mismo nombre que la clase a la que pertencen.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">No deben devolver nada, ni siquiera tenemos que poner "void".<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Se encargan de inicializar los atributos de un nuevo objeto.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Todas las respuestas anteriores son correctas.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235312  -->
+  <question type="multichoice">
+    <name>
+      <text>Equals 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Dada una clase "Punto", diseñada para trabajar en un espacio de dos dimensiones, y el siguiente código:</p>
+<pre>Punto p= new Punto(0.0, 0.0);<br>Punto q= new Punto(0.0, 0.0);<br>if (p == q){<br>	System.out.println("Son iguales");<br>} else {<br>	System.out.println("Son distintos");<br>}</pre>
+<p dir="ltr" style="text-align: left;">¿qué ocurre al ejecutar este código?<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Se muestra "Son distintos".<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Se muestra "Son iguales".<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Se produce un error de compilación.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Se produce una excepción, un error en ejecución.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235316  -->
+  <question type="multichoice">
+    <name>
+      <text>Herencia 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Deseamos crear una clase pública "Perro", que herede de la clase "Animal", y que cumpla los contratos establecidos por las interfaces "Mamifero" y "Mascota". La declaración de la clase sería:</p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">public class Perro extends Animal implements Mamifero, Mascota<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">public class Perro extends Animal implements Mamifero implements Mascota<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">public class Perro extends Mamifero, Mascota implements Animal<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">public class Perro is Animal implements Mamifero and Mascota<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235317  -->
+  <question type="multichoice">
+    <name>
+      <text>Herencia 02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Tenemos las siguientes clases:</p>
+<ul>
+    <li>Clase abstracta "Animal".</li>
+    <li>Clase abstracta "Mamifero", que extiende "Animal"<br></li>
+    <li>Clase abstracta "Reptil", que extiende "Animal"<br></li>
+    <li>Clase "Perro", que hereda de "Mamifero", y que implementa la interfaz "Mascota"</li>
+    <li>Clase "Tortuga", que hereda de "Reptil", y que implementa la interfaz "Mascota"</li>
+</ul>
+<p dir="ltr" style="text-align: left;">¿Que pasasará al compilar y ejecutar el siguiente código?</p>
+<pre>Animal a1 = new Perro();<br>Animal a2 = new Tortuga();<br>Mascota m1 = a1;<br>Mascota m2 = a2;<br>Mamifero x = m1;<br>Reptil y = m2;<br><br></pre>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Error de compilación en la línea "Mascota m1 = a1;"<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Error de compilación en la línea "Mamifero x = m1;"<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Error de ejecución en la línea "Mascota m1 = a1;"<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Error de ejecución en la línea "Mamifero x = m1;"<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235315  -->
+  <question type="multichoice">
+    <name>
+      <text>Interfaces 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Indicar la respuesta correcta.<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Las clases pueden implementar varios interfaces y extender una clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Las clases pueden implementar varios interfaces y extender varias clases.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Una interfaz no puede extender otras interfaces.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Las clases admiten herencia múltiple.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235309  -->
+  <question type="multichoice">
+    <name>
+      <text>Modificadores 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">El modificador "final", aplicado a un atributo, significa:<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que el atributo en cuestión será de solo lectura, no podrá modificarse.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que el atributo no puede ser heredado por las clases que extiendan la superclase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que el atributo se comparte entre todas las instancias (objetos) de la clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que solo se podrá acceder al atributo desde la propia clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235310  -->
+  <question type="multichoice">
+    <name>
+      <text>Modificadores 02</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">El atributo "final" en la declaración de una clase significa:<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que ninguna clase podrá heredar de (extender) esta clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que los atributos de la clase no podrán modificarse.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que no se podrán construir objetos de la clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que los atributos de la clase se compartirán entre todas las instancias (objetos) de esa clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235311  -->
+  <question type="multichoice">
+    <name>
+      <text>Modificadores 03</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">El modificador "static" en un atributo de una clase implica:<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que el atributo se comparte entre todas las instancias (objetos) de esa clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que el atributo no puede heredarse en las subclases que extiendan la clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que la clase no podrá ser heredada (extendida).<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Que no se podrá acceder al atributo.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+  
+  <!-- question: 235307  -->
+  <question type="multichoice">
+    <name>
+      <text>Sobrecarga 01</text>
+    </name>
+    <questiontext format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">La sobrecarga de métodos permite:<br></p>]]></text>
+    </questiontext>
+    <generalfeedback format="html">
+      <text></text>
+    </generalfeedback>
+    <defaultgrade>1.0000000</defaultgrade>
+    <penalty>0.3333333</penalty>
+    <hidden>0</hidden>
+    <idnumber></idnumber>
+    <single>true</single>
+    <shuffleanswers>true</shuffleanswers>
+    <answernumbering>abc</answernumbering>
+    <showstandardinstruction>0</showstandardinstruction>
+    <correctfeedback format="html">
+      <text>Respuesta correcta</text>
+    </correctfeedback>
+    <partiallycorrectfeedback format="html">
+      <text>Respuesta parcialmente correcta.</text>
+    </partiallycorrectfeedback>
+    <incorrectfeedback format="html">
+      <text>Respuesta incorrecta.</text>
+    </incorrectfeedback>
+    <shownumcorrect/>
+    <answer fraction="100" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Tener, en la misma clase, varios métodos con el mismo nombre pero con distintos parámetros.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Tener en la misma clase métodos con el mismo nombre pero que devuelven tipos diferentes.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Tener en dos clases métodos con el mismo nombre.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+    <answer fraction="-25" format="html">
+      <text><![CDATA[<p dir="ltr" style="text-align: left;">Tener métodos privados y públicos en la misma clase.<br></p>]]></text>
+      <feedback format="html">
+        <text></text>
+      </feedback>
+    </answer>
+  </question>
+</quiz>

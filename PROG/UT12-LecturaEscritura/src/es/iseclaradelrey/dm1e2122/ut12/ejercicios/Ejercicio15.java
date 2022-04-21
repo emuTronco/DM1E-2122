@@ -102,9 +102,11 @@ public class Ejercicio15 {
 
 		raf2.writeDouble(numero); // Escribimos el numero
 		try {
-			numeroLeido = raf1.readDouble();
-			System.out.println("numeroLeido y pasado al auxiliar (comentario en depuracion...): " + numeroLeido);
-			raf2.writeDouble(numeroLeido);
+			while (true) {
+				numeroLeido = raf1.readDouble();
+				System.out.println("numeroLeido y pasado al auxiliar (comentario en depuracion...): " + numeroLeido);
+				raf2.writeDouble(numeroLeido);
+			}
 		} catch (EOFException e) {// ?????
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
@@ -152,7 +154,7 @@ public class Ejercicio15 {
 		}
 	}
 
-	public static void mostrarFichero(RandomAccessFile raf) throws Exception {
+	public static void mostrarFichero(RandomAccessFile raf) throws IOException {
 		double numero;
 
 		raf.seek(0);
@@ -203,9 +205,11 @@ public class Ejercicio15 {
 
 		try {
 			raf = new RandomAccessFile(nomFich, "rw");
-			numeroLeido = raf.readDouble();
-			System.out.println("numeroLeido: " + numeroLeido);
-			numeros.add(numeroLeido);
+			while (true) {
+				numeroLeido = raf.readDouble();
+				System.out.println("numeroLeido: " + numeroLeido);
+				numeros.add(numeroLeido);
+			}
 		} catch (EOFException e) {
 		} catch (Exception e) {
 			System.out.println(e.getMessage());

@@ -6,10 +6,23 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Persona implements Serializable {
+	
+	private static final int EDAD_MAXIMA = 70;
+	
 	private String dni;
 	private String nombre;
 	private String apellidos;
 	private LocalDate fechaNacimiento;
+	private String userName;
+	private transient String password;
+
+	public String getUserName() {
+		return userName;
+	}
+
+	public String getPassword() {
+		return password;
+	}
 
 	public Persona(String dni, String nombre, String apellidos, String fechaNacimiento) {
 		super();

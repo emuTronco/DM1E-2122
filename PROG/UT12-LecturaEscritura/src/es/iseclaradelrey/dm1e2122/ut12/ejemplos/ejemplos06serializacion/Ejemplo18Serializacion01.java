@@ -25,7 +25,7 @@ public class Ejemplo18Serializacion01 {
 		System.out.println("Lista de personas que vamos a guardar en el fichero.");
 		mostrarListaPersonas(personas);
 
-		escribirPersonasEnFichero(personas, PATH_FICHERO_PERSONAS);
+		//escribirPersonasEnFichero(personas, PATH_FICHERO_PERSONAS);
 
 		List<Persona> personasLeidas = leerPersonasEnFichero(PATH_FICHERO_PERSONAS);
 
