@@ -58,7 +58,7 @@ public class Ejemplo04CCallableStatement {
 			}
 
 			// Para recuperar el valor del parámetro se usa el su índice (posición).
-			int stockPelicula = st.getInt(3);
+			int stockPelicula = st.getInt(3); 
 
 			return stockPelicula;
 		} catch (SQLException ex) {
