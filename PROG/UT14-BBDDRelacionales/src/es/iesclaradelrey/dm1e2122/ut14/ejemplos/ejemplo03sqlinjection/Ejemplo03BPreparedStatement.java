@@ -49,17 +49,17 @@ public class Ejemplo03BPreparedStatement {
 			// Se añaden los parámetros por su posición, que empieza por el 1, no por cero.
 			// No hay por qué añadirlos en orden.
 			st.setString(1, nombre);
-			st.setString(2, nombre);
+			st.setString(2, apellido);
 			// La sobrecarga st.executeQuery(consulta) no se puede usar en un objeto
 			// PreparedStatement. Se ejecuta la consulta que se definió al construir el
 			// objeto.
-			ResultSet rs = st.executeQuery();
-			System.out.printf("\nDatos de actores según la consulta\n%s\n", sql);
-			if (!rs.isBeforeFirst()) {
-				System.out.println("No se han encontrado registros.");
-			} else {
-
-				mostrarDatosResultSet(rs);
+			try (ResultSet rs = st.executeQuery()) {
+				System.out.printf("\nDatos de actores según la consulta\n%s\n", sql);
+				if (!rs.isBeforeFirst()) {
+					System.out.println("No se han encontrado registros.");
+				} else {
+					mostrarDatosResultSet(rs);
+				}
 			}
 		} catch (SQLException ex) {
 			System.err.println(ex.getMessage());

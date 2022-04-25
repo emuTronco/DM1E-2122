@@ -40,7 +40,7 @@ public class Ejemplo04BCallableStatement {
 
 			
 			// Se añaden los parámetros por su nombre.
-			// No hay por qué añadirlos en orden.S
+			// No hay por qué añadirlos en orden.
 			st.setInt("p_film_id", idPelicula);
 			st.setInt("p_store_id", idTienda);
 			// El tercer parámetro es de salida. Hay que usar registerOutParameter,
