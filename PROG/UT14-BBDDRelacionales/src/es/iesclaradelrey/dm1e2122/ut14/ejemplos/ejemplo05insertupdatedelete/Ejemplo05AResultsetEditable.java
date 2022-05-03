@@ -6,8 +6,6 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-import com.mysql.cj.protocol.Resultset;
-
 public class Ejemplo05AResultsetEditable {
 	private static final String CONNECTION_URL = "jdbc:mysql://localhost/sakila";
 	private static final String USERNAME = "sakilauser";

@@ -1,6 +1,5 @@
 package es.iesclaradelrey.dm1e2122.ut14.ejercicios;
 
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.PrintStream;
 import java.sql.Connection;
@@ -8,7 +7,6 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class Ejercicio01 {
 	private static final String CONNECTION_URL = "jdbc:mysql://localhost/sakila";

@@ -12,7 +12,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
-import java.util.Scanner;
 
 public class Ejercicio04 {
 
@@ -24,8 +23,6 @@ public class Ejercicio04 {
 	private static final String SQL_INSERT_CUSTOMER = "insert into old_customer values (?, ?, ?, ?, ?, ?, ?, ?, ?)";
 
 	private static final String PATH_FICHERO = "customer.bin";
-
-	private static Scanner sc = new Scanner(System.in);
 
 	public static void main(String[] args) {
 		eliminarOldCustomers();
@@ -53,6 +50,7 @@ public class Ejercicio04 {
 	}
 
 	// Exporta los datos de la tabla customer en un fichero, usando serialziación.
+	@SuppressWarnings("unused")
 	private static void exportarCustomers() {
 		// Abrimos conexión, preparamos la sentencia SQL y la ejecutamos, obteniendo los
 		// resultados en un ResultSet.

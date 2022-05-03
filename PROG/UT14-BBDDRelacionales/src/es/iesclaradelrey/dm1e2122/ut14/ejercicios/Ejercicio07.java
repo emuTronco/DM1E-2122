@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.sql.Savepoint;
 import java.time.LocalDateTime;
 import java.util.Scanner;
 
@@ -25,9 +24,6 @@ public class Ejercicio07 {
 			// Cambiamos el modo de la conexión para que no haga autocommit
 			conn.setAutoCommit(false);
 
-			// Creamos un savepoint pra poder volver a este punto
-			Savepoint savepoint = conn.setSavepoint();
-
 			// Iniciamos un contador para poder confirmar cada 10 registros
 			int numRegistrosGuardados = 0;
 
@@ -44,8 +40,9 @@ public class Ejercicio07 {
 				// lote.
 				numRegistrosGuardados++;
 				if (numRegistrosGuardados % 10 == 0) {
+					// No es necesario el uso de SavePoints.
+					// Nos limitamos a confirmar cambios cada 10 registros.
 					conn.commit();
-					savepoint = conn.setSavepoint();
 				}
 
 				contenido = sc.nextLine();

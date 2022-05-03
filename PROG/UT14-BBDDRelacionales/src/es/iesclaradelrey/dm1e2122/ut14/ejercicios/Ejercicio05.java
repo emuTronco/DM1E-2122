@@ -12,9 +12,6 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Timestamp;
-import java.util.Scanner;
-
-import com.mysql.cj.protocol.Resultset;
 
 public class Ejercicio05 {
 
@@ -61,7 +58,9 @@ public class Ejercicio05 {
 
 	}
 
-	// Exporta los datos de la tabla customer en un fichero, usando serialziación.
+	// Exporta los datos de la tabla customer en un fichero, usando serialización.
+	
+	@SuppressWarnings("unused")
 	private static void exportarCustomers() {
 		// Abrimos conexión, preparamos la sentencia SQL y la ejecutamos, obteniendo los
 		// resultados en un ResultSet.
