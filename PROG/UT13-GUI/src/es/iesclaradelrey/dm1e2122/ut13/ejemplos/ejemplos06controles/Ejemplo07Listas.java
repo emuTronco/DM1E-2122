@@ -109,7 +109,6 @@ public class Ejemplo07Listas extends JFrame {
 	private void actualizaCampoTexto(ListSelectionEvent e) {
 		if (!e.getValueIsAdjusting()) {
 			String newValue = (String)listPeliculas.getSelectedValue();
-			var valores = listPeliculas.getSelectedValues()
 			textFieldTitulo.setText(newValue);
 		}
 	}
