@@ -1,20 +1,20 @@
 package es.iesclaradelrey.dm1e2122.ut13.ejemplos.ejemplos06controles;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
+import java.awt.FlowLayout;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
+import javax.swing.ButtonGroup;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import javax.swing.ButtonGroup;
-import java.awt.FlowLayout;
 import javax.swing.JRadioButton;
-import javax.swing.JTextField;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import javax.swing.border.EmptyBorder;
 
 public class Ejemplo04RadioButtons extends JFrame {
 
+	private static final long serialVersionUID = 1L;
+	
 	private JPanel contentPane;
 	private final ButtonGroup buttonGroupABCD = new ButtonGroup();
 	private final ButtonGroup buttonGroupWXYZ = new ButtonGroup();

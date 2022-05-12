@@ -33,7 +33,7 @@ public class SaxEjemplo03Handler extends DefaultHandler {
 			this.currentCustomer = new Customer();
 		}
 		if (qName.equals("CompanyName")) {
-			currentCustomer.setCompanyName()
+			currentCustomer.setCompanyName();
 		}
 		System.out.printf("Inicio de elemento %s\n", qName);
 	}

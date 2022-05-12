@@ -2,7 +2,6 @@ package es.iseclaradelrey.dm1e2122.ut12.ejemplos.ejemplos03basicos;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.Scanner;
 
 public class Ejemplo09CierreStreamEstandar {
 

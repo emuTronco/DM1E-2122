@@ -1,10 +1,10 @@
 package es.iesclaradelrey.dm1e2122.ut13.ejemplos.ejemplos03windowbuilder;
 
+import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import java.awt.BorderLayout;
 
 public class EjemploWB01 {
 

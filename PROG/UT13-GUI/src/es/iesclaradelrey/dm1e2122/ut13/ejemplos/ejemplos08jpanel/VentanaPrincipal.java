@@ -1,11 +1,9 @@
 package es.iesclaradelrey.dm1e2122.ut13.ejemplos.ejemplos08jpanel;
 
-import java.awt.BorderLayout;
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
 
 public class VentanaPrincipal extends JFrame {
 

@@ -1,20 +1,14 @@
 package es.iesclaradelrey.dm1e2122.ut13.ejemplos.ejemplos06controles;
 
-import java.awt.BorderLayout;
-import java.awt.Checkbox;
 import java.awt.EventQueue;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
 
+import javax.swing.BoxLayout;
+import javax.swing.JCheckBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.BoxLayout;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.JCheckBox;
-import javax.swing.LayoutStyle.ComponentPlacement;
-import java.awt.FlowLayout;
-import java.awt.event.ItemListener;
-import java.awt.event.ItemEvent;
 
 /**
  * 
@@ -23,6 +17,7 @@ import java.awt.event.ItemEvent;
  */
 public class Ejemplo03CheckBoxes extends JFrame {
 
+	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 
 	/**

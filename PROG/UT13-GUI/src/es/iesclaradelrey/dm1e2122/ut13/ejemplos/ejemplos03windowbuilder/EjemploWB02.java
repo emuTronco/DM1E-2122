@@ -2,13 +2,8 @@ package es.iesclaradelrey.dm1e2122.ut13.ejemplos.ejemplos03windowbuilder;
 
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import java.awt.BorderLayout;
-import java.awt.GridLayout;
 import javax.swing.JButton;
-import javax.swing.JLabel;
-import java.awt.event.ActionListener;
-import java.awt.event.ActionEvent;
+import javax.swing.JFrame;
 
 public class EjemploWB02 {
 

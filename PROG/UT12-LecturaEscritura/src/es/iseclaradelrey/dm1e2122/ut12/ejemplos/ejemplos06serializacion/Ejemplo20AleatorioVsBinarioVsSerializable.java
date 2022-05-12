@@ -1,17 +1,12 @@
 package es.iseclaradelrey.dm1e2122.ut12.ejemplos.ejemplos06serializacion;
 
 import java.io.DataOutputStream;
-import java.io.EOFException;
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
-import java.io.OutputStreamWriter;
 import java.io.RandomAccessFile;
-import java.util.Random;
 
 /**
  * 

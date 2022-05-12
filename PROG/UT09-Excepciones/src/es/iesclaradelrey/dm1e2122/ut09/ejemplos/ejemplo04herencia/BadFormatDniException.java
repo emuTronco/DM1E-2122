@@ -2,6 +2,8 @@ package es.iesclaradelrey.dm1e2122.ut09.ejemplos.ejemplo04herencia;
 
 public class BadFormatDniException extends RuntimeException {
 
+	private static final long serialVersionUID = 1L;
+
 	public BadFormatDniException() {
 		// TODO Auto-generated constructor stub
 	}

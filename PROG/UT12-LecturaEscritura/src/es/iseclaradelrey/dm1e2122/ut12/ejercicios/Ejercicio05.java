@@ -3,7 +3,6 @@ package es.iseclaradelrey.dm1e2122.ut12.ejercicios;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.io.PrintWriter;
 import java.util.Scanner;
 

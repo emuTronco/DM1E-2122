@@ -2,7 +2,6 @@ package es.iseclaradelrey.dm1e2122.ut12.ejemplos.ejemplos06serializacion;
 
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Persona implements Serializable {

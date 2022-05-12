@@ -1,6 +1,5 @@
 package es.iseclaradelrey.dm1e2122.ut12.ejercicios;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;

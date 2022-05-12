@@ -1,23 +1,17 @@
 package es.iesclaradelrey.dm1e2122.ut13.ejemplos.ejemplos08jpanel;
 
-import javax.swing.JPanel;
-import java.awt.GridLayout;
 import java.awt.BorderLayout;
-import java.awt.CardLayout;
-import javax.swing.SpringLayout;
-import javax.swing.JLabel;
-import javax.swing.JTextField;
-import java.awt.FlowLayout;
-import java.awt.Font;
-import javax.swing.SwingConstants;
-import javax.swing.JTextPane;
-import javax.swing.JSeparator;
-import javax.swing.JButton;
 import java.awt.Color;
-import javax.swing.JList;
-import javax.swing.BoxLayout;
+import java.awt.Font;
 import java.awt.event.ComponentAdapter;
 import java.awt.event.ComponentEvent;
+
+import javax.swing.BoxLayout;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.SwingConstants;
 
 public class PanelPrincipal extends JPanel {
 

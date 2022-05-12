@@ -1,10 +1,5 @@
 package es.iesclaradelrey.dm1e2122.ut13.ejemplos.ejemplos02layouts;
 
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
-import java.awt.GridBagLayout;
-import java.awt.GridLayout;
-
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
