@@ -1,0 +1,21 @@
+Los nombres de los productos del pedido con ID 71936
+    /Orders/Order[@OrderID = 71936]/OrderDetails/OrderDetail/ProductName
+
+Los ID de los productos de los pedidos con ID 71784 y 71845. Haz la consulta de dos formas diferentes.
+    /Orders/Order[@OrderID = 71784 or @OrderID = 71845 ]/OrderDetails/OrderDetail/@ProductID
+    /Orders/Order[@OrderID = 71784]/OrderDetails/OrderDetail/@ProductID | /Orders/Order[@OrderID = 71845 ]/OrderDetails/OrderDetail/@ProductID
+
+Todos los ID de pedido en los que en algún producto ha tenido descuento (descuento mayor que cero)
+    /Orders/Order[OrderDetails/OrderDetail/UnitPriceDiscount > 0]/@OrderID
+
+Los pedidos que se enviaron a Reino Unido (United Kingdom). Todo el pedido, no solo el ID
+    /Orders/Order[ShipToAddress/Address/CountryRegion = 'United Kingdom']
+
+El número de pedidos que se enviaron a Reino Unido (United Kingdom). 
+    count(/Orders/Order[ShipToAddress/Address/CountryRegion = 'United Kingdom'])
+
+Los Id de pedido de los pedidos con más de 10 productos.
+    /Orders/Order[count(OrderDetails/OrderDetail) > 10]/@OrderID
+    Esta no vale porque cuenta en la condición TODOS los productos de TODOS los pedidos: /Orders/Order[count(//OrderDetail) > 10]/@OrderID |
+
+

@@ -1,0 +1,20 @@
+Los ID de cliente de los clientes con más de una dirección
+    /Customers/Customer[count(Addresses/Address) > 1]/@CustomerID
+
+Elige uno de los ID encontrados en la búsqueda anterior y busca todas sus direcciones
+    /Customers/Customer[@CustomerID = 29816]/Addresses/Address
+
+Número de clientes con sólo una dirección
+    count(/Customers/Customer[count(Addresses/Address) = 1])
+
+Número de clientes con más de una dirección
+    count(/Customers/Customer[count(Addresses/Address) > 1])
+
+Número de clientes sin direcciones
+    count(/Customers/Customer[not(Addresses)])
+
+Los clientes (Nombre y apellido, concatenados y separados por espacio) que tienen una dirección en el estado de Washington
+    /Customers/Customer[Addresses/Address/StateProvince = 'Washington']/concat(FirstName, ' ',LastName)
+
+
+    

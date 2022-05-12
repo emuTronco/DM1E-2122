@@ -1,0 +1,30 @@
+Truco para probar:
+    Si queremos hacer una expresión relativa, podemos probarla concatenándola, separada por /, a una expresión absoluta que nos da el elemento sobre el que queremos probar.
+    Ejemplo: obtener el estado (Status) del pedido de un producto. Para probar, usamos el producto 836 en el pedido 71774
+        Expresión absoluta para el producto en el pedido: /Orders/Order[@OrderID = 71774]/OrderDetails/OrderDetail[@ProductID = 836]
+        Expresión relativa para el estado desde el OrderDetail: ../../Status <-- Esto es la respuesta a la pregunta.
+        Concatenando:/Orders/Order[@OrderID = 71774]/OrderDetails/OrderDetail[@ProductID = 836]/../../Status
+
+Expresión 1:
+    Contexto: Producto con ID 822 del pedido con número de pedido SO71774 
+    Obtener el importe total del pedido (TotalDue)
+        Contexto: /Orders/Order[@OrderNumber = 'SO71774']/OrderDetails/OrderDetail[@ProductID = 822]
+        Relativa: ../../TotalDue
+        Concatenado: /Orders/Order[@OrderNumber = 'SO71774']/OrderDetails/OrderDetail[@ProductID = 822]/../../TotalDue
+
+Expresión 2:
+    Contexto: Pedido con número SO71897.
+    Obtener todos los productos con un precio unitario superior a 1000.
+        Contexto: /Orders/Order[@OrderNumber = 'SO71897']
+        Relativa: OrderDetails/OrderDetail[UnitPrice > 1000]
+        Concatenado: /Orders/Order[@OrderNumber = 'SO71897']/OrderDetails/OrderDetail[UnitPrice > 1000]
+
+Expresión 3:
+    Contexto: Producto con ID 798 del pedido con ID 71938
+    Obtener todos los productos del mismo pedido con un precio unitario mayor que el del producto contexto.
+        Contexto: /Orders/Order[@OrderID = 71938]/OrderDetails/OrderDetail[@ProductID = 798]
+        La que parece razonable pero no funciona:
+            Relativa: ../OrderDetail[UnitPrice > ./UnitPrice]
+            Concatenado: /Orders/Order[@OrderID = 71938]/OrderDetails/OrderDetail[@ProductID = 798]/../OrderDetail[UnitPrice > ./UnitPrice]
+        Esta si funciona: ../OrderDetail[UnitPrice > ../OrderDetail[@ProductID = 798]/UnitPrice]
+            /Orders/Order[@OrderID = 71938]/OrderDetails/OrderDetail[@ProductID = 798]/../OrderDetail[UnitPrice > ../OrderDetail[@ProductID = 798]/UnitPrice]
