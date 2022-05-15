@@ -21,9 +21,9 @@ public class EjemploTemas {
 		// Fijamos uno de los temas:
 		try {
 //			UIManager.setLookAndFeel("javax.swing.plaf.metal.MetalLookAndFeel");
-			//UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
-//			UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
-			UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
+//			UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");
+			UIManager.setLookAndFeel("com.sun.java.swing.plaf.motif.MotifLookAndFeel");
+//			UIManager.setLookAndFeel("com.sun.java.swing.plaf.gtk.GTKLookAndFeel");
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {

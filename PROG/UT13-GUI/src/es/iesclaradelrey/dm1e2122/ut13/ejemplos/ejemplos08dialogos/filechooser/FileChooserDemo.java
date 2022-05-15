@@ -141,6 +141,7 @@ public class FileChooserDemo extends JPanel implements ActionListener {
 		// Handle open directory button action.
 		if (e.getSource() == openDirectoryButton) {
 			fc.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
+			fc.setCurrentDirectory(new File ("/"));
 			int returnVal = fc.showOpenDialog(FileChooserDemo.this);
 			if (returnVal == JFileChooser.APPROVE_OPTION) {
 				File file = fc.getSelectedFile();

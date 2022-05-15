@@ -145,7 +145,7 @@ public class DialogDemo extends JPanel {
 
 				// ok dialog
 				if (command == defaultMessageCommand) {
-					JOptionPane.showMessageDialog(frame, "Eggs aren't supposed to be green.");
+					JOptionPane.showMessageDialog(frame, "Eggs aren't supposed to be green.", "Información", JOptionPane.WARNING_MESSAGE);
 
 					// yes/no dialog
 				} else if (command == yesNoCommand) {
