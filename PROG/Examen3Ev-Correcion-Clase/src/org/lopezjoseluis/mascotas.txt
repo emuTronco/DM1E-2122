@@ -1,0 +1,10 @@
+Nombre               | Especie              | Raza                                     | Edad
+---------------------------------------------------------------------------------------------
+Lassie               | Perro                | Collie                                   |    3
+Garfield             | Gato                 | Americano de pelo corto                  |    8
+Pluto                | Perro                | Bloodhound                               |    3
+Hedwig               | Lechuza              | Bubo scandiacus                          |    5
+Pancho               | Perro                | Jack Russell                             |    4
+Jiffpom              | Perro                | Pomenrania                               |    9
+Nala                 | Gato                 | Siamés / Tabbimix                        |    7
+Marutaro             | Perro                | Shiba Inu                                |    5
