@@ -1,0 +1,42 @@
+Ejercicio XPath.
+
+Dado el fichero XML universidad.xml, crear las expresiones XPath necesarias para obtener:
+
+- Asignaturas con más de 4 créditos teóricos
+    /universidad/asignaturas/asignatura[creditos_teoricos > 4]
+    //asignatura[creditos_teoricos > 4]
+
+- Id de los alumnos que no tienen proyecto
+    /universidad/alumnos/alumno[estudios/not (proyecto)]/@id
+
+
+- Nombre de la carrera que estudia Luisa Pérez (Código de alumno e02)
+
+    A: /universidad/carreras/carrera[@id = ]/nombre
+    B: /universidad/alumnos/alumno[@id="e02"]/estudios/carrera/@codigo
+    Combinado: /universidad/carreras/carrera[@id = /universidad/alumnos/alumno[@id="e02"]/estudios/carrera/@codigo]/nombre
+    //carrera[@id = //alumno[@id="e02"]/estudios/carrera/@codigo]/nombre
+
+
+- Suponiendo que nos encontramos en el elemento "carrera" de un alumno, ruta RELATIVA para obtener todos los códigos de las asignaturas del alumno
+    ../asignaturas/asignatura/@codigo
+
+
+- Número de alumnos que cursan la asignatura 'Historia del Pensamiento' (código a09)
+    count(//alumno[estudios/asignaturas/asignatura/@codigo = "a09"])
+
+- Nombre de los proyectos de los alumnos que cursan la carrera I.T. Informática (id de carrera c01)
+    //proyecto[../carrera/@codigo = "c01"]
+    /universidad/alumnos/alumno/estudios[carrera/@codigo="c01"]/proyecto
+    //alumno/estudios[carrera/@codigo="c01"]/proyecto
+
+- Nombre de centro en que se imparten carreras del plan 2003
+    /universidad/carreras/carrera[plan = "2003"]/centro
+
+
+- Carreras (nodo completo) con más de 250 créditos y plan posterior al año 2000
+
+
+Códigos de las asignturas que estudian los alumnos hombres que estudian la carrera con código c01.
+//alumno[sexo="Hombre" and estudios/carrera/@codigo = "c01"]/estudios/asignaturas/asignatura/@codigo
+

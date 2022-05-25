@@ -1,0 +1,26 @@
+Crear una hoja de estilos XSLT para transformar los datos del fichero XML pokemon-B.xml en una página HTML con la siguiente estructura:
+
+    • Usará la estructura HTML 5 recomendada, pero sin navegación (sin elemento nav)
+    • Tendrá tres secciones, una para los datos generales del pokemon, otra para los movimientos y otra para las imágenes.
+    • La sección de datos generales tendrá (entre paréntesis el nombre del dato en el XML):
+        ◦ Nombre (name).
+        ◦ Experiencia inicial (base_experience)
+        ◦ Estatura (height)
+        ◦ Peso (weight)
+        ◦ Enlace con el texto “Datos completos de [nombre del pokemon]” que enlazará, abriendo en ventana nueva, con la URL de la API (url).
+    • La sección de movimientos tendrá una lista de los nombres de los movimientos del pokemon (moves)
+    • La sección de imágenes contendrá las diferentes imágenes del pokemon. La URL de cada una de estas imágenes está en sprites / sprite.
+
+Restricciones respecto a la estructura HTML:
+    • La página debe incluir una estructura adecuada de encabezados HTML (h) que acompañe y sea coherente a la estructura HTML 5 recomendada.
+
+Dar estilos CSS a la página obtenida. Se puede usar estilos en la cabecera (head) o en un fichero externo. Se recomienda el uso de fichero externo. Hay total libertad para aplicar estilos, salvo la siguiente restricción:
+    • La experiencia del pokemon debe ser de un color distinto según el siguiente criterio:
+        ◦ Si es menor que 100, rojo.
+        ◦ Si es mayor o igual a 100 pero menor que 200, amarillo.
+        ◦ Si es mayor o igual que 200, verde.
+
+Penalizaciones:
+    • Como ya se ha indicado, la hoja de estilos XSLT debe ser XML válido. Si no lo es, no se corregirá el ejercicio, y se puntuará con un cero.
+    • Si, aún siendo XML válido, la transformación falla, se penalizará con -2,5 puntos.
+    • Si no se aplican estilos CSS de ninguna clase, se penalizará con -2,5 puntos.
