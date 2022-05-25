@@ -9,18 +9,15 @@ Dado el fichero XML universidad.xml, crear las expresiones XPath necesarias para
 - Id de los alumnos que no tienen proyecto
     /universidad/alumnos/alumno[estudios/not (proyecto)]/@id
 
-
 - Nombre de la carrera que estudia Luisa Pérez (Código de alumno e02)
 
-    A: /universidad/carreras/carrera[@id = ]/nombre
-    B: /universidad/alumnos/alumno[@id="e02"]/estudios/carrera/@codigo
+    A: La base para obtener la universidad por su Id: /universidad/carreras/carrera[@id = ]/nombre
+    B: La expresión para obtener el id de la universidad de Luisa: /universidad/alumnos/alumno[@id="e02"]/estudios/carrera/@codigo
     Combinado: /universidad/carreras/carrera[@id = /universidad/alumnos/alumno[@id="e02"]/estudios/carrera/@codigo]/nombre
     //carrera[@id = //alumno[@id="e02"]/estudios/carrera/@codigo]/nombre
 
-
 - Suponiendo que nos encontramos en el elemento "carrera" de un alumno, ruta RELATIVA para obtener todos los códigos de las asignaturas del alumno
     ../asignaturas/asignatura/@codigo
-
 
 - Número de alumnos que cursan la asignatura 'Historia del Pensamiento' (código a09)
     count(//alumno[estudios/asignaturas/asignatura/@codigo = "a09"])
@@ -33,10 +30,9 @@ Dado el fichero XML universidad.xml, crear las expresiones XPath necesarias para
 - Nombre de centro en que se imparten carreras del plan 2003
     /universidad/carreras/carrera[plan = "2003"]/centro
 
-
 - Carreras (nodo completo) con más de 250 créditos y plan posterior al año 2000
+    /universidad/carreras/carrera[plan > 2000 and creditos > 250]
 
-
-Códigos de las asignturas que estudian los alumnos hombres que estudian la carrera con código c01.
-//alumno[sexo="Hombre" and estudios/carrera/@codigo = "c01"]/estudios/asignaturas/asignatura/@codigo
-
+- Extra (no estaba en el examen): códigos de las asignturas que estudian los alumnos hombres que estudian la carrera con código c01.
+    Forma 1: con "and" //alumno[sexo="Hombre" and estudios/carrera/@codigo = "c01"]/estudios/asignaturas/asignatura/@codigo
+    Forma 2: con dos predicados en nodos diferentes (se combinan en un "and"): //alumno[sexo="Hombre"]/estudios[carrera/@codigo = "c01"]/asignaturas/asignatura/@codigo
